@@ -40,10 +40,11 @@ body{
     margin-bottom: 5px;
 }
 .container input{
+    font-family: "Orbitron", sans-serif;
     text-align: center;
     width: 7rem;
     height: 6rem;
-    margin: 10px 0 5px;
+    margin: 20px 0 0px;
     font-size: 1.45rem;
     background: transparent;
     border: 1.5px solid #a1c4fd;
@@ -52,4 +53,56 @@ body{
     color: #555;
     font-weight: 500;
     transition: all 0.4s ease-in;
+}
+
+.container input:hover,
+.container input:focus{
+    box-shadow: 0 3px 11px rgba(0,0,0,0.2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#guessBtn{
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 19px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+#guessBtn::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #4b87e7;
+    width: 20%;
+    height: 50%;
+    transition: all 0.3s ease-in;
+    border-radius: 50%;
+}
+#guessBtn:hover::before{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+#guessBtn:hover{
+    letter-spacing: 2px;
+    color: #f5f4f4;
+    transform: scale(1.05) rotate(2deg);
+}
+
+p{
+    color: #555;
 }
