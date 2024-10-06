@@ -19,10 +19,16 @@
         <h3>Can You Guess It???</h3>
         <input type="number" placeholder="Enter" id="guess">
         <br>
-        <button onclick="play()" id="guessBtn">Guess</button>
-        <p class="message1">Number of guesses are : 0</p>
-        <p class="message2">Guessed numbers are : None</p>
-        <p class="message3"></p>
+        <div class="btns">
+            <button onclick="play()" id="guessBtn">Guess</button>
+            <button onclick="reset()" id="resetBtn">Reset</button>
+        </div>
+        <p id="message1">Number of guesses are : 0</p>
+        <p id="message2">Guessed numbers are : None</p>
+        <p id="message3"></p>
     </div>
+
+    <!-- Link To JavaScript -->
+    <script src="Assests/JavaScript/script.js"></script>
 </body>
 </html>
